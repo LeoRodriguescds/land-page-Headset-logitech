@@ -6,12 +6,38 @@
 }
 
 header {
-    height: 10vh;
-    background-image: linear-gradient(to right, #377DED, #3EACE0);
+    height: 55vh;
+    background-image: linear-gradient(45deg , #320E75, #5E1ADB, #4D16B5);
     font-family: 'Lato', sans-serif;
     color: #fff;
     margin: 0; padding-bottom: 118px;
     text-align: right;
+    border-radius: 0px 0px 55px 55px;
+}
+
+.headset {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-5%, -50%);
+}
+
+.titulo-h {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 40%;
+    left: 2%;
+}
+
+.titulo-h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    top: 47%;
+    left: 2%;
+
 }
 
 .header-logo {
