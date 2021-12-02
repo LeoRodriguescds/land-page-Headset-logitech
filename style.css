@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Shippori+Antique&display=swap');
-    
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Shippori+Antique&display=swap'); 
+
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -77,6 +77,12 @@ nav ul li a {
     color: #fff;
     font-weight: 700;
     transition: 0.5s;
+}
+
+nav ul li a:hover {
+    background-color: #7b54c4;
+    padding: 8px 8px;
+    border-radius: 15px;
 }
 
 .t-main {
@@ -331,6 +337,8 @@ footer {
 }
 
 
+
+/*
 @media screen and (min-width: 1440px) {
 
     #sobre {
@@ -476,4 +484,4 @@ footer {
     }
     
 
-}
+}/*
