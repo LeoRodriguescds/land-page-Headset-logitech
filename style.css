@@ -94,6 +94,27 @@ nav ul li a {
     margin-left: 20px;
 }
 
+.btn {
+    position: absolute;
+    top: 78%;
+    left: 20px;
+    background-color: #fff;
+    border: #5E1ADB solid 4px;
+    color: #4D16B5;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 4px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #5E1ADB;
+    color: #fff;
+}
+
 .detalhes {
     display: flex;
 }
@@ -109,18 +130,10 @@ nav ul li a {
     background-color:#8A4FF7;
 }
 
-
-.backg {
-    display: flex;
-    background-color: #8A4FF7;
-    z-index: 1;
-}
-
 .img1 {
     position: absolute;
     top: 755px;
     left: 930px;
-    background-color: #8A4FF7;
 
 }
 
@@ -128,7 +141,6 @@ nav ul li a {
     position: absolute;
     top: 755px;
     left: 540px;
-    background-color: #8A4FF7;
 
 }
 
@@ -136,60 +148,184 @@ nav ul li a {
     position: absolute;
     top: 755px;
     left: 130px;
-    background-color: #8A4FF7;
 
 }
 
 #liberdade-h {
-    color: #432678;
-    text-decoration: underline;
-    font: bolder 15px 'Lato';
+    color: #fff;
+    font: bolder 20px 'Lato';
     position: absolute;
     top: 984px;
-    left: 153px;
+    left: 130px;
+    text-decoration: underline;
 }
 
 #liberdade-p {
-    color: #000;
+    color: #fff;
     font: bolder 15px 'Lato';
     position: absolute;
     top: 1015px;
-    left: 113px;
+    left: 120px;
+    margin-right: 75%;
 }
 #liberdade-h2 {
-    color: #432678;
+    color: #fff;
     text-decoration: underline;
-    font: bolder 15px 'Lato';
+    font: bolder 20px 'Lato';
     position: absolute;
     top: 984px;
-    left: 528px;
+    left: 510px;
 }
 
 #liberdade-p2 {
-    color: #000;
+    color: #fff;
     font: bolder 15px 'Lato';
     position: absolute;
     top: 1015px;
-    left: 515px;
+    left: 537px;
+    margin-right: 44%;
 }
 #liberdade-h3 {
-    color: #432678;
+    color: #fff;
     text-decoration: underline;
-    font: bolder 15px 'Lato';
+    font: bolder 20px 'Lato';
     position: absolute;
     top: 984px;
-    left: 930px;
+    left: 900px;
 }
 
 #liberdade-p3 {
-    color: #000;
+    color: #fff;
     font: bolder 15px 'Lato';
     position: absolute;
     top: 1015px;
-    left: 910px;
+    left: 927px;
+    margin-right: 14%;
 }
 
-.txt-main {
-    width: 100%;
-    background-color: #8A4FF7;
+section {
+    height: 180px;
+    background-image: linear-gradient(45deg , #320E75, #5F35DE, #4D16B5);
+    background-attachment: fixed;
+}
+
+#sobre {
+    position: absolute;
+    top: 710px;
+    left: 600px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #fff;
+
+    background-color: #5F35DE;
+
+}
+
+.cont {
+    content: '';
+    width: 1320px;
+    height: 55%;
+    border: #4D16B5 solid 10px;
+    margin-left: 15px;
+    margin-top: 30px;
+    position: absolute;
+    top: 1250px;
+}
+
+.contato h1 {
+    position: absolute;
+    top: 1380px;
+    left: 800px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+
+}
+
+.contato h3 {
+    position: absolute;
+    top: 1420px;
+    left: 550px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+.contato h4 {
+    position: absolute;
+    top: 1480px;
+    left: 675px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+.contato h5 {
+    position: absolute;
+    top: 1500px;
+    left: 680px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+.mapa {
+    position: absolute;
+    top: 1310px;
+    left: 40px;
+    border: #000 solid 2px;
+}
+
+.sup {
+    position: absolute;
+    top: 1550px;
+    left: 780px;
+
+    border: #4D16B5 solid 5px;
+    padding: 10px;
+    background-color: #fff;
+    color: #4D16B5;
+    font-size: 20px;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.6s;
+}
+
+.sup:hover {
+    background-color: #4D16B5;
+    color: #fff;
+}
+
+footer {
+    display: block;
+    background-color: #4D16B5;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    margin-top: 420px;
+}
+
+.reveal {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.reveal2 {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal2.ativo {
+    transform: translateY(0px);
+    opacity: 1;
 }
