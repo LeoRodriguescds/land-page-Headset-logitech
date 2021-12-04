@@ -409,29 +409,99 @@ section button.sup {
     }
 
     #detalhes {
-        height: 120vh;
+        height: 100vh;
+    }
+
+    .txt-main {
+        display: grid;
+        grid-template-columns: repeat(3, 48vh);
+        grid-template-rows: repeat(12, 10vh);
+        margin-top: 5vh;
+        margin-left: 3vh;
+    }
+
+    
+    #liberdade-h {
+        margin-left: 5%;
+
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-column-end: 4;
+    }
+    #liberdade-p {
+        width: 90%;
+        margin-left: 10%;
+
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    #liberdade-h2 {
+        width: 40%;
+        margin-left: 8%;
+
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-column-end: 4;
+    }
+    #liberdade-p2 {
+        width: 40%;
+        margin-left: 0;
+
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-column-end: 5;
+    }
+    #liberdade-h3 {
+        margin-left: 10%;
+        width: 80%;
+
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-column-end: 4;
+    }
+    #liberdade-p3 {
+        margin-right: 2%;
+        margin-left: 0%;
+
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-column-end: 5;
     }
 
     #sobre {
-        margin: auto;
-        text-align: center;
-    }
-    
-    #detalhes-img {
-        display: flexbox;
-        margin-top: 0%;
-        margin-left: 20px;
-        flex-direction: column;
+        font-size: 1.2rem;
     }
 
-    section #img1 {
-        margin-left: 0px;
+    .img1 {
+        margin-left: 10%;
+        margin-right: 0%;
+    }
+
+    .img2 {
+        margin-left: 15%;
+        margin-right: 0%;
+    }
+
+    .img3 {
+        margin-left: 15%;
+    }
+
+    .cont {
+        height: 60vh;
+        width: 90%;
     }
 
    .contato {
        display: inline-block;
        font-size: 0.5rem;
-       margin-left: 65vh;
+       margin-left: 40vh;
    }
 
    .sup {
@@ -441,11 +511,13 @@ section button.sup {
 
    .mapa {
        margin-top: 5vh;
+       margin-left: 45vh;
    }
 
 }
 
-@media (max-width: 1332px) {
+
+@media (min-width: 1332px) {
 
     nav ul li a {
         font-size: 1rem
