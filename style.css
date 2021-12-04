@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Shippori+Antique&display=swap'); 
 
+
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -255,21 +256,27 @@ nav ul li a:hover {
     margin-left: 3%;
 }
 
-.cont {
-    content: '';
-    width: 1320px;
-    height: 55%;
-    border: #4D16B5 solid 10px;
-    margin-left: 15px;
-    margin-top: 30px;
-    position: absolute;
-    top: 1250px;
+.fim-main  {
+    background-color: #fff;
+    border: solid 10px #4D16B5;
+    margin: 8vh 1vh 1px 1vh;
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 10vh);
+    margin-left: 25%;
 }
 
 .contato h1 {
-    position: absolute;
-    top: 1380px;
-    left: 800px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+    margin-top: 7vh;
+    margin-left: 30%;
 
     font-family: 'Lato', sans-serif;
     font-size: 20px;
@@ -277,41 +284,54 @@ nav ul li a:hover {
 }
 
 .contato h3 {
-    position: absolute;
-    top: 1420px;
-    left: 550px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+
+    margin-top: 5vh;
 
     font-family: 'Lato', sans-serif;
     font-size: 20px;
 }
 .contato h4 {
-    position: absolute;
-    top: 1480px;
-    left: 675px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+
+    margin-top: 5vh;
 
     font-family: 'Lato', sans-serif;
     font-size: 20px;
 }
 .contato h5 {
-    position: absolute;
-    top: 1500px;
-    left: 680px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;
+
+    margin-top: 5vh;
 
     font-family: 'Lato', sans-serif;
     font-size: 20px;
 }
 
-.mapa {
+section div.mapa {
     position: absolute;
-    top: 1310px;
+    top: 1350px;
     left: 40px;
     border: #000 solid 2px;
+
 }
 
-.sup {
-    position: absolute;
-    top: 1550px;
-    left: 780px;
+section button.sup {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 6;
+
+    margin-bottom: 2vh;
 
     border: #4D16B5 solid 5px;
     padding: 10px;
@@ -328,17 +348,6 @@ nav ul li a:hover {
 .sup:hover {
     background-color: #4D16B5;
     color: #fff;
-}
-
-footer {
-    display: block;
-    background-color: #4D16B5;
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    align-items: center;
-    margin-top: 420px;
 }
 
 .reveal {
@@ -362,6 +371,8 @@ footer {
     opacity: 1;
 }
 
+
+
 @media (max-width: 1024px) {
     
     body {
@@ -373,13 +384,8 @@ footer {
         font-size: 0.8rem;
     }
 
-    .columns {
-        display: flex;
-        flex-direction: column;
-    }
-
     .titulo-h {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         margin-left: 2%;
     }
 
@@ -400,5 +406,61 @@ footer {
     .btn {
         font-size: 1rem;
         margin-top: 5vh;
+    }
+
+    #detalhes {
+        height: 120vh;
+    }
+
+    #sobre {
+        margin: auto;
+        text-align: center;
+    }
+    
+    #detalhes-img {
+        display: flexbox;
+        margin-top: 0%;
+        margin-left: 20px;
+        flex-direction: column;
+    }
+
+    section #img1 {
+        margin-left: 0px;
+    }
+
+   .contato {
+       display: inline-block;
+       font-size: 0.5rem;
+       margin-left: 65vh;
+   }
+
+   .sup {
+       margin-left: 30%;
+       margin-top: 2vh;
+   }
+
+   .mapa {
+       margin-top: 5vh;
+   }
+
+}
+
+@media (max-width: 1332px) {
+
+    nav ul li a {
+        font-size: 1rem
+    }
+
+    .headset {
+        top: 58%;
+    }
+
+    .img1 {
+        margin-left: 20%;
+        margin-right: 28%;
+    }
+
+    .titulo-h {
+        margin-top: 24vh;
     }
 }
