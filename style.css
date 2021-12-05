@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     background-color: #fff;
     font-size: 62.5%;
 }
@@ -14,6 +14,7 @@ body {
 /*HEADER STARTS*/
 
 header {
+    width: 100%;
     height: 55vh;
     background-image: linear-gradient(45deg , #320E75, #5E1ADB, #4D16B5);
     font-family: 'Lato', sans-serif;
@@ -21,7 +22,7 @@ header {
     margin: 0; padding-bottom: 110px;
     text-align: right;
     border-radius: 0px 0px 48px 48px;
-    margin-bottom: 340px;
+    margin-bottom: 28rem;
 }
 
 .headset {
@@ -106,7 +107,7 @@ nav ul li a:hover {
 
 .btn {
     position: absolute;
-    top: 78%;
+    top: 74%;
     left: 20px;
     background-color: #fff;
     border: #5E1ADB solid 4px;
@@ -130,14 +131,14 @@ nav ul li a:hover {
 /*START MAIN*/
 
 #detalhes {
-        height: 80vh;
+        height: 70vh;
         background-image: linear-gradient(45deg , #320E75, #5F35DE, #4D16B5);
         background-attachment: fixed;
 }
 
 .columns {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 2fr);
     grid-template-rows: repeat(4, 2vh);
 }
 
@@ -153,7 +154,7 @@ nav ul li a:hover {
     grid-row-start: 1;
     grid-row-end: 1;
 
-    margin-left: 0%;
+    margin-right: 40vw;
     margin-top: 2%;
 }
 
@@ -181,57 +182,70 @@ nav ul li a:hover {
 }
 
 #liberdade-h {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 
     grid-column-start: 1;
     grid-column-end: 1;
-    grid-row-start: 5;
-    grid-row-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 4;
     margin-left: 30%;
 }
 
 #liberdade-p {
     width: 50%;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 
     grid-column-start: 1;
     grid-column-end: 1;
-    grid-row-start: 6;
-    grid-row-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 5;
     margin-left: 30%;
 }
 
 #liberdade-h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 
     grid-column-start: 2;
     grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 4;
     margin-left: 8%;
 }
 
 #liberdade-p2 {
     width: 80%;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 
     grid-column-start: 2;
     grid-column-end: 2;
-    grid-row-start: 6;
-    grid-row-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 5;
     margin-left: 8%;
 }
 
 #liberdade-h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    margin-left: 3%;
+}
+
+#liberdade-p3 {
+    width: 80%;
+    font-size: 1.0rem;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 
@@ -239,19 +253,6 @@ nav ul li a:hover {
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 5;
-    margin-left: 3%;
-}
-
-#liberdade-p3 {
-    width: 80%;
-    font-size: 0.8rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 6;
-    grid-row-end: 6;
     margin-left: 3%;
 }
 
@@ -322,8 +323,11 @@ nav ul li a:hover {
 section div.mapa {
     display: flex;
     padding: 10px 10px 10px 10px;
-    margin-top: 5vh;
+    margin-top: 12vh;
     margin-left: 5%;
+
+    border: solid 5px black;
+    height: 30vh;
 }
 
 section button.sup {
@@ -372,381 +376,168 @@ section button.sup {
     opacity: 1;
 }
 
+/*MEDIA QUERIES*/
 
+@media (max-width: 1270px) {
 
-@media (max-width: 1269px) {
-
-    nav ul li a {
-        font-size: 1rem
+    body {
+        font-size: 50%;
     }
+
+    .img1 {
+        margin-left: 20%;
+        margin-right: 30%;
+    }
+
+    .img2 {
+        margin-right: 30%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    body {
+        font-size: 50%;
+    }
+
+    .img1 {
+        margin-left: 10%;
+        margin-right: 20%;
+    }
+
+    .img2 {
+        margin-right: 18%;
+    }
+}
+
+@media (max-width: 770px) {
+    body {
+        font-size: 45%;
+    }
+
+    /*MENU TOGGLE START*/
+
+    
+
+
+    /*MENU TOGGLE END*/
 
     .headset {
-        top: 58%;
-    }
-
-    .img1 {
-        margin-left: 15%;
-        margin-right: 10%;
-    }
-
-    .img2 {
-        margin-right: 24%;
-    }
-
-    .titulo-h {
-        margin-top: 24vh;
-    }
-
-    .contato {
-        margin-top: 0;
-        margin-bottom: 10vh;
-    }
-    .mapa {
-        margin-top: 5%;
-    }
-    .sup {
-        margin-left: 10%;
-        margin-right: 40%;
-        margin-top: 8vh;
-        height: 8vh;
-    }
-}
-@media (max-width: 1025px) {
-    
-    body {
-        font-size: 50%;
-        width: 100%;
-    }
-
-    nav ul li a {
-        font-size: 0.8rem;
-    }
-
-    .titulo-h {
-        font-size: 0.9rem;
-        margin-left: 2%;
-    }
-
-    .titulo-h3 {
-        font-size: 1rem;
-        margin-left: 2%;
-    }
-
-    .t-main {
-        font-size: 1.2rem;
-    }
-
-    .t-main1 {
-        font-size: 1rem;
-        margin-right: 45%;
-    }
-
-    .btn {
-        font-size: 1rem;
-        margin-top: 5vh;
-    }
-
-    #detalhes {
-        height: 100vh;
-    }
-
-    .txt-main {
-        display: grid;
-        grid-template-columns: repeat(3, 48vh);
-        grid-template-rows: repeat(12, 10vh);
-        margin-top: 5vh;
-        margin-left: 3vh;
-    }
-
-    
-    #liberdade-h {
-        margin-left: 5%;
-
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 4;
-        grid-column-end: 4;
-    }
-    #liberdade-p {
-        width: 90%;
-        margin-left: 10%;
-
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 5;
-        grid-row-end: 5;
-    }
-    #liberdade-h2 {
-        width: 40%;
-        margin-left: 8%;
-
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row-start: 4;
-        grid-column-end: 4;
-    }
-    #liberdade-p2 {
-        width: 40%;
-        margin-left: 0;
-
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row-start: 5;
-        grid-column-end: 5;
-    }
-    #liberdade-h3 {
-        margin-left: 0%;
-        margin-right: 0%;
-        width: 80%;
-
-        grid-column-start: 3;
-        grid-column-end: 3;
-        grid-row-start: 4;
-        grid-column-end: 4;
-    }
-    #liberdade-p3 {
-        margin-right: 0%;
-        margin-left: 0%;
-
-        grid-column-start: 3;
-        grid-column-end: 3;
-        grid-row-start: 5;
-        grid-column-end: 5;
-    }
-
-    #sobre {
-        font-size: 1.2rem;
-    }
-
-    #detalhes-img {
-        margin-left: 0%;
-    }
-
-    .img1 {
-        margin-left: 10%;
-        margin-right: 0%;
-    }
-
-    .img2 {
-        margin-left: 10%;
-        margin-right: 0%;
-    }
-
-    .img3 {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .cont {
-        height: 60vh;
-        width: 100%;
-        margin-right: 0%;
-    }
-
-   .contato {
-       display: inline-block;
-       font-size: 0.5rem;
-       margin-left: 40vh;
-   }
-
-   button.sup {
-       margin-left: 30%;
-       margin-top: 2vh;
-   }
-
-   div.mapa {
-       margin-top: 20%;
-       margin-left: 45vh;
-       margin-right: 0%;
-   }
-
-}
-@media (max-width: 1024px) {
-    
-    body {
-        font-size: 50%;
-        width: 100%;
-    }
-
-    header {
-        width: 100%;
-    }
-
-    nav ul li a {
-        font-size: 0.8rem;
-    }
-
-    .titulo-h {
-        font-size: 0.9rem;
-        margin-left: 2%;
-    }
-
-    .titulo-h3 {
-        font-size: 1rem;
-        margin-left: 2%;
-    }
-
-    .t-main {
-        font-size: 1.2rem;
-    }
-
-    .t-main1 {
-        font-size: 1rem;
-        margin-right: 45%;
-    }
-
-    .btn {
-        font-size: 1rem;
-        margin-top: 5vh;
-    }
-
-    #detalhes {
-        height: 100vh;
-    }
-
-    .txt-main {
-        display: grid;
-        grid-template-columns: repeat(3, 48vh);
-        grid-template-rows: repeat(12, 10vh);
-        margin-top: 5vh;
-        margin-left: 3vh;
-    }
-
-    
-    #liberdade-h {
-        margin-left: 5%;
-
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 4;
-        grid-column-end: 4;
-    }
-    #liberdade-p {
-        width: 90%;
-        margin-left: 10%;
-
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 5;
-        grid-row-end: 5;
-    }
-    #liberdade-h2 {
-        width: 40%;
-        margin-left: 8%;
-
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row-start: 4;
-        grid-column-end: 4;
-    }
-    #liberdade-p2 {
-        width: 40%;
-        margin-left: 0;
-
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row-start: 5;
-        grid-column-end: 5;
-    }
-    #liberdade-h3 {
-        margin-left: 5%;
-        width: 70%;
-
-        grid-column-start: 3;
-        grid-column-end: 3;
-        grid-row-start: 4;
-        grid-column-end: 4;
-    }
-    #liberdade-p3 {
-        margin-right: 2%;
-        margin-left: 0%;
-
-        grid-column-start: 3;
-        grid-column-end: 3;
-        grid-row-start: 5;
-        grid-column-end: 5;
-    }
-
-    #sobre {
-        font-size: 1.2rem;
-    }
-
-    #detalhes-img {
-        margin-left: 0%;
-    }
-
-    .img1 {
-        margin-left: 10%;
-        margin-right: 0%;
-    }
-
-    .img2 {
-        margin-left: 15%;
-        margin-right: 0%;
-    }
-
-    .img3 {
-        margin-left: 15%;
-    }
-
-    .cont {
-        height: 20%;
-        width: 100%;
-    }
-
-   .contato {
-       display: inline-block;
-       font-size: 0.5rem;
-       margin-left: 40vh;
-   }
-
-   .sup {
-       margin-left: 30%;
-       margin-top: 2vh;
-   }
-
-   div.mapa {
-       margin-top: 28%;
-       margin-left: 45vh;
-   }
-
-
-}
-@media (max-width: 768px) {
-    nav {
-        display: none;
-    }
-
-    .one, .two, .three {
-        background-color: #fff;
-        width: 100%;
-        height: 5px;
-        margin: 6px auto;
-    }
-
-    .menu-toggle {
-        
-        width: 40px;
-        height: 30px;
-        margin-right: 20px;
-    }
-
-    .menu-section.on {
         position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 100vw;
-        height: 100vh;
-
-        background-image: linear-gradient(45deg , #320E75, #5E1ADB, #4D16B5);
-
-        z-index: 10;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
-
-
-    .menu-section.on {
-        display: block;
+    .titulo-h {
+        margin-top: 6vh;
+        margin-left: 20vw;
     }
+
+    .titulo-h3 {
+        font-size: 1.8rem;
+        margin-left: 26vw;
+    }
+
+    .t-main {
+        left: 180px;
+    }
+    
+    .t-main1 {
+        left: 20px;
+    }
+
+    .btn {
+        position: absolute;
+        top: 74%;
+        left: 40vw;
+        
+        font-size: 1.7rem;
+    }
+
+    #sobre {
+        position: absolute;
+        left: 30vh;
+    }
+
+    .img1 {
+        margin-left: 10%;
+        margin-right: 2%;
+    }
+
+    .img2 {
+        margin-right: 5%;
+    }
+
+    section div.mapa{
+        margin-top: 5vh;
+    }    
+
+    .cont {
+        height: 20vh;
+    }
+
+    .mapa  {
+        position: absolute;
+        top: 1800px;
+        left: 100px;
+    }
+
+    .contato h1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+
+        margin-top: 5vh;
+        margin-left: 40vw;
+        
+    }
+    
+    .contato h3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    
+        margin-top: 2vh;
+        margin-left: 30vw;
+    }
+
+    .contato h4 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    
+        margin-top: 10vh;
+        margin-left: 28vw;
+    }
+
+    .contato h5 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    
+        margin-top: 5vh;
+        margin-left: 30vw;
+    }
+    
+    section button.sup {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+
+        font-size: 1.5rem;
+
+        margin-top: 10vh;
+        margin-bottom: 4vh;
+        margin-left: 40vw;
+
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
 }
