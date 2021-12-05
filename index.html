@@ -13,12 +13,17 @@
     <header>
         <div>
             <div class="header-logo">
-                <a href="index.html"><img src="img/logo-blanco_ofc.png"></a>
+                <a href="index.html">
+                   <picture>
+                       <source media="(max-width: 500px)" srcset="img/logo-blanco_ofc-100px.png" type="image/png">
+                       <img src="img/logo-blanco_ofc.png">
+                   </picture>
+                </a>
             </div>
            
             
             <div class="nav">
-                <div class="menu-section on">
+                <div class="menu-section">
                     <div class="menu-toggle">
                     <div class="one"></div>
                     <div class="two"></div>
@@ -34,13 +39,14 @@
                             <li><a href="#">RESERVE-JÁ</a></li>
                             <li><a href="#">CONTATO</a></li>
                         </ul>
-                    </div>
                 </nav>
+                </div>
             </div>
         </div>
             <div class="headset">
                 
                 <picture>
+                    <source media="(max-width: 500px)" srcset="img/headset-300px.png" type="image/png">
                     <source media="(max-width: 770px)" srcset="img/headset-450px.png" type="image/png">
                     <source media="(max-width: 1100px)" srcset="img/headset-500px.png" type="image/png" class="headset">
                     <img src="img/headset.png" alt=""></picture>
@@ -57,7 +63,7 @@
        
 
     <main>
-        <section>
+        <section id="down-healer">
             <h2 class="t-main">CONHEÇA O G733 LIGHTSPEED</h2>
             <h2 class="t-main1">O G733 LIGHTSPEED é o headset gamer sem fio RGB <br> desenvolvido para se adequar ao seu estilo e oferecer total conforto e durabilidade para jogos. <br> Possui mais recursos de autoexpressão do que nunca: filtros de voz, luzes RGB frontais <br> e design de faixa de cabeça para você jogar do seu jeito.</h2>
             <button class="btn">RESERVE-JÁ</button>
@@ -118,8 +124,36 @@
 </section>
     </main>
 
+    <footer>
+        <h3>LANDING PAGE CRIADA POR <strong>LEONARDO RODRIGUES</strong></h3>
+    </footer>
+
+</body>
+</html>
 
     <!--SCRIPT START-->
+
+    <!--MENU-RESPONSIVE START-->
+    <script>
+        let show = true;
+
+        const menuSection = document.querySelector(".menu-section")
+        const menuToggle = menuSection.querySelector(".menu-toggle")
+
+        menuToggle = addEventListener("click", () => {
+
+            document.body.style.overflow = show ? "hidden" : "initial"
+
+            menuSection.classList.toggle("on", show)
+
+            show = !show;
+        })
+
+
+    </script>
+    <!--MENU-RESPONSIVE END-->
+
+    <!--EVENTS ON SCROLL START-->
     <script>
         window.addEventListener('load', reveal);
 
@@ -165,8 +199,8 @@
                 }
             }
     </script>
+    <!--EVENTS ON SCROLL END-->
+
     <!--SCRIPT END-->
 
 
-</body>
-</html>
